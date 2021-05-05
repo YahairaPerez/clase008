@@ -31,6 +31,10 @@ body.portada{
 
 }
 
+#logo {
+    position: absolute;
+    top: 10px;
+}
 a {
     font-weight: bold;
     color: rgba(255, 255, 255, 0.5);
@@ -49,6 +53,13 @@ div.container {
     width: 80vw;
     margin: 0 auto;
     font-family: Arial, Helvetica, sans-serif;
+
+        position:relative;
+        padding-left: 2rem;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        margin-bottom: auto;
+        margin-top: auto;
 }
 
 nav, footer {
