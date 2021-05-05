@@ -21,30 +21,54 @@
                 </div>
             </main>
             <footer>
-                <p><a href="#">Yahaira Pérez</a> <a href="#">DNO037</a></p>
+                <p><a href="https://github.com/YahairaPerez">Yahaira Pérez</a> <a href="https://github.com/profesorfaco/dno037-2021">DNO037</a></p>
             </footer>
         </div>
 <script>
-    var mymap = L.map('mapa').setView([33.5427796,9.9672612], 2);
+    var mymap = L.map('mapa').setView([53.7813885,-11.9539592], 5.25);
     L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw', {
         maxZoom: 18,
-        id: 'mapbox/dark-v10',
+        id: "mapbox/light-v10",
         tileSize: 512,
         zoomOffset: -1
     }).addTo(mymap);
 
+var myIcon = L.icon({
+                    iconUrl: './images/iconomapa1.png',
+                    iconSize: [38, 40],
+                    
+               
+                });     
+             myIcon = L.marker([55.4155828, -1.7059204], {icon: myIcon}).addTo(mymap).bindPopup("Alnwick Castle, Reino Unido");
 
-    L.marker([33.5427796,9.9672612]).addTo(mymap).bindPopup("<b>Hola</b>. Soy un bindPopup.");
+var myIcon2 = L.icon({
+                    iconUrl: './images/iconomapa1.png',
+                    iconSize: [38, 40],
+                });    
+                    myIcon2 = L.marker([51.5318512, -0.1234736], {icon: myIcon2}).addTo(mymap).bindPopup("Estación de King’s Cross , Reino Unido");
+        
+var myIcon3 = L.icon({
+                    iconUrl: './images/iconomapa1.png',
+                    iconSize: [38, 40],
+                });    
+                    myIcon3 = L.marker([51.7855189,-2.7416238], {icon: myIcon3}).addTo(mymap).bindPopup("El bosque de Dean , Reino Unido"); 
+
+var myIcon4 = L.icon({
+                    iconUrl: './images/iconomapa2.png',
+                    iconSize: [38, 40],
+                });    
+                    myIcon4 = L.marker([56.8762172, -5.4317589], {icon: myIcon4}).addTo(mymap).bindPopup("Viaducto de Glenfinnan, Escocia");   
+        
+var myIcon5 = L.icon({
+                    iconUrl: './images/iconomapa3.png',
+                    iconSize: [38, 40],
+                });    
+                    myIcon5 = L.marker([51.6590512, -5.073964], {icon: myIcon5}).addTo(mymap).bindPopup("Playa de Freshwater West, Gales)");   
+          
     
-    var myIcon = L.icon({
-                       iconUrl: './images/icono-mapa1.png',
-                       iconSize: [50, 50],
-                    });
-
-                    myIcon = L.marker([55.4155828, -1.7059204], {icon: myIcon}).addTo(miMapa).on("click", vinculo);
-                    function vinculo() {
-                    window.open(more, "_blank", "noopener");
-                    }
+    
+    
+                    
    
 </script>
     </body>
